@@ -28,15 +28,15 @@
 <h1>Awesome Game</h1>
 <p>Your score: <text id="myScore">0</text></p>
 <div class="ui-grid-b">
-	<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
-	<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
-	<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
-	<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
-	<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
-	<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
-	<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
-	<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div> 
-	<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:120px"><button onclick="addScore()" type="button" style="height: 100%"></button></div></div>
+	<div class="ui-block-a"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
+	<div class="ui-block-b"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
+	<div class="ui-block-c"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
+	<div class="ui-block-a"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
+	<div class="ui-block-b"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
+	<div class="ui-block-c"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
+	<div class="ui-block-a"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
+	<div class="ui-block-b"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div> 
+	<div class="ui-block-c"><div class="game ui-bar ui-bar-a" style="height:120px"></div></div>
 </div>
 
 </center>
@@ -48,6 +48,7 @@
 		score = score + 1;
 		$("#myScore").html(score);
 	}
+	$(".game").click(function(){addScore();});
 </script>
 
 </html>
